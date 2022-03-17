@@ -1,0 +1,129 @@
+
+
+body {
+    background: #f5f6f7;
+    font-family: 'Cambria', sans-serif;
+}
+
+.header {
+    background-color: white;
+    font-size: 16pt;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-logo{
+    vertical-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.header-logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-logo-text {
+    width: 100px;
+    margin-left: 10px;
+}
+
+
+.header-right-block .header-menu {
+    border: black 1px solid;
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    border-radius: 34px;
+}
+
+.header-right-block .header-menu li {
+    display: inline;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.header-right-block .header-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-right-block .header-menu a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.post {
+    margin-top: 2em;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.post_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post_tag_list li {
+    display: inline;
+    list-style-type: none;
+    background-color: #1b2b4c;
+    border-radius: 30px;
+    padding: 5px;
+    padding-inline: 10px;
+    margin: 5px;
+
+}
+
+.tag_url {
+    color: white;
+    text-decoration: none;
+}
+
+.post_tag_list li:hover {
+    background-color: #fbb751;
+    color: black;
+}
+
+
+.post_date {
+    max-width: 150px;
+    margin-left: auto;
+    color: #7f8f9f;
+}
+
+.post-date:after {
+    content: '';
+}
+
+.footer {
+    color: white;
+    margin-top: 1em;
+    height: 50px;
+    background-color: #1b2b4c;
+    width: 100%;
+    padding-top: 1em;
+}
+
+.footer-inner-text {
+    text-align: center;
+}

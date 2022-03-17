@@ -1,0 +1,27 @@
+{% load static %}
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header-logo">
+                    <a href="{% url 'posts:index' %}">
+                        <img src="{% static 'img/logo.svg' %}">
+                    </a>
+                    <a class="header-logo-text" href="{% url 'posts:index' %}">milssky<br>workspace</a>
+                </div>
+
+                <div class="header-right-block">
+                    <ul class="header-menu">
+                        <li>
+                            <a href="">Первый</a>
+                        </li>
+                        <li>
+                            <a href="">Второй</a>
+                        </li>
+                        <li>
+                            <a href="">Третий</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
