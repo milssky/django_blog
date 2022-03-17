@@ -3,7 +3,7 @@ from django.db import models
 
 from martor.widgets import AdminMartorWidget
 
-from posts.models import Post
+from posts.models import Category, Post
 
 
 class PostModelAdmin(admin.ModelAdmin):
@@ -11,4 +11,10 @@ class PostModelAdmin(admin.ModelAdmin):
         models.TextField: {'widget': AdminMartorWidget},
     }
 
+
+class CategoryModelAdmin(PostModelAdmin):
+    pass
+
+
+admin.site.register(Category, CategoryModelAdmin)
 admin.site.register(Post, PostModelAdmin)
