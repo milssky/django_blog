@@ -36,7 +36,7 @@ class Post(models.Model):
         User,
         on_delete=models.CASCADE,
         related_name="posts",
-        default="1"
+        default=1
     )
     image = models.ImageField(
         upload_to="posts/",
