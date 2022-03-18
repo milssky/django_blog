@@ -1,10 +1,14 @@
+{% load static %}
+{% load martortags %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Титла{% endblock %}</title>
-        {% load static %}
+        <link href="{% static 'plugins/css/bootstrap.min.css' %}" type="text/css" media="all" rel="stylesheet" />
+        <style>.main-container {margin-top: 3em}</style>
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        {% block css %}{% endblock css %}
     </head>
 
     <body>
@@ -13,6 +17,8 @@
             {% block content %}Контент{% endblock %}
         </main>
         {% include 'includes/footer.html' %}
+        <script type="text/javascript" src="{% static 'plugins/js/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'plugins/js/bootstrap.min.js' %}"></script>
+        {% block js %}{% endblock %}
     </body>
-
 </html>

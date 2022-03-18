@@ -1,0 +1,16 @@
+{% load martortags %}
+
+    <div class="post">
+        <div class="post_header">
+            <h1 class="post_title">{{ post.title }}</h1>
+            <div class="post_tags">
+                <ul class="post_tag_list">
+                    <a class="tag_url" href="{% url 'posts:category_list' post.category.slug %}"><li>{{ post.category.title }}</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="post_text">
+            {{ post.text|safe_markdown }}
+        </div>
+        <div class="post_date">&#10002; {{ post.pub_date }}</div>
+    </div>
