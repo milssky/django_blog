@@ -13,7 +13,7 @@ class Category(models.Model):
     description = MartorField()
 
     def __str__(self) -> str:
-        return self.title
+        return f"{self.title}, slug - {self.slug}"
 
 
 class Post(models.Model):
