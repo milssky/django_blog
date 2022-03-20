@@ -31,5 +31,5 @@ def category_list(request, slug):
     )
 
 
-def post_detail(request, post_id):
+def post_detail(request, slug, post_id):
     pass

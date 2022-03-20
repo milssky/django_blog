@@ -2,7 +2,7 @@
 
     <div class="post">
         <div class="post_header">
-            <h1 class="post_title">{{ post.title }}</h1>
+            <h1 class="post_title"><a href="{% url 'posts:post_detail' post.category.slug post.id %}">{{ post.title }}</a></h1>
             <div class="post_tags">
                 <ul class="post_tag_list">
                     <a class="tag_url" href="{% url 'posts:category_list' post.category.slug %}"><li>{{ post.category.title }}</li></a>

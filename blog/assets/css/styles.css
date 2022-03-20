@@ -115,6 +115,15 @@ body {
     content: '';
 }
 
+.post_title a{
+    color: #000;
+    text-decoration: none;
+}
+
+.post_title a:hover{
+    color:#a13244
+}
+
 .footer {
     color: white;
     margin-top: 1em;
