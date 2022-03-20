@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ post.title }}{% endblock %}
+{% block content %}
+    <div class="container">
+        {% include "includes/post_item.html" with post=post detail=True %}
+    </div>
+{% endblock %}
+
+{% block js %}
+  <script type="text/javascript" src="{% static 'plugins/js/highlight.min.js' %}"></script>
+  
+  <script>
+    $('pre').each(function(i, block){
+        hljs.highlightBlock(block);
+    });
+  </script>
+{% endblock %}

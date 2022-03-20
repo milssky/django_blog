@@ -32,4 +32,9 @@ def category_list(request, slug):
 
 
 def post_detail(request, slug, post_id):
-    pass
+    post = get_object_or_404(Post.objects.select_related('category'), id=post_id)
+    return render(
+        request,
+        'posts/post_detail.html',
+        {'post': post}
+    )
